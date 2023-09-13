@@ -9,9 +9,9 @@ body {
     border: 4px solid black;
     animation: 
     /* La prrimera 5segundos dos veces */
-    change-color 5s 2,
+    change-color 5s infinite,
     /* mover 5segundos 1vez */
-    move-bo 3s 1
+    move-bo 3s infinite
 }
 
 
