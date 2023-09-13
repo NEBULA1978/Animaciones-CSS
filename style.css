@@ -9,7 +9,7 @@ body {
     background-color: lightblue;
     margin: 30px auto;
     border-radius: 30px;
-
+    transition: background-color 1s linear;
 }
 .box:hover{
 background: red;
