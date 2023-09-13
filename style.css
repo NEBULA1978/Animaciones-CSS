@@ -19,8 +19,11 @@ body {
     /* from {
         background-color: indigo;
     } */
+    0% {
+        background-color: indigo;
+    }
 
-    to {
+    100% {
         background-color: red;
     }
 
