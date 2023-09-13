@@ -8,11 +8,11 @@ body {
     height: 300px;
     border: 4px solid white;
     animation-name: change-color;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     background-color: indigo;
 
-    /* animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
 }
 
 @keyframes change-color {
@@ -21,6 +21,15 @@ body {
     } */
     0% {
         background-color: indigo;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: blue;
     }
 
     100% {
