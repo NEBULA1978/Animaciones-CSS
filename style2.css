@@ -1,0 +1,100 @@
+body {
+    background: #223;
+
+}
+
+.box {
+
+    
+    
+    width: 300px;
+    height: 300px;
+    border: 4px solid white;
+    
+    /* Estas 3podemos poner en una linea */
+    /* animation: change-color 3s linear infinite; */
+    animation-name: change-color;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    /* Podemos eliminar por defecto y no poner */
+    /* animation: change-color 3s  infinite; */
+    
+    
+    background-color: indigo;
+    /* 3veces */
+    /* animation-iteration-count: 3; */
+    /* una vez */
+    /* animation-iteration-count: 1; */
+
+    /* Animacion infinita */
+    animation-iteration-count: infinite;
+    
+    /* Se para al final al estado inicial*/
+    /* animation-fill-mode: none; */
+    
+    /*Empieza y Terimina en estado inicial */
+    /* animation-fill-mode: forwards; */
+
+    /* empieza y termina de forma diferente */
+    /* animation-fill-mode: backwards; */
+    
+    /* aplica las dos propiedades a la vez */
+    /* empieza y termina como empieza */
+    /* animation-fill-mode: both; */
+
+    /* alterna estilos */
+    /* animation-direction: alternate; */
+    /* invierte estilos de colores y temaños,etx */
+    animation-direction: reverse;
+
+    /* Pausa */
+    /* animation-play-state: paused; */
+    /* Anima */
+    animation-play-state: running;
+}
+
+
+/* Cuando ponemos el ratron encima se pausa */
+/* .box:hover {
+    animation-play-state: paused; */
+/* }  */
+
+/* con javascript podemos activar o deactivar paused cuando pase una accion en la pagina*/
+.box:paused {
+    animation-play-state: paused;
+} 
+
+@keyframes change-color {
+    /* from {
+        background-color: indigo;
+    } */
+    /* si tenemos varios porcentajes , y debajo otro */
+    0% {
+        background-color: indigo;
+        width: 100px;
+    }
+    25%,25% {
+        background-color: yellow;
+        width: 200px;
+    }
+    /* he puesto arriba con , */
+    /* 25% {
+        background-color: yellowgreen;
+        width: 300px;
+    } */
+    50%{
+
+        background-color: green;
+        width: 300px;
+    }
+    75% {
+        background-color: blue;
+        width: 400px;
+    }
+
+    100% {
+        background-color: red;
+        width: 100px;
+    }
+
+}
