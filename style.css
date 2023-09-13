@@ -14,16 +14,25 @@ body {
     /* 3veces */
     /* animation-iteration-count: 3; */
     /* una vez */
-    animation-iteration-count: 1;
-    
+    /* animation-iteration-count: 1; */
+
     /* Animacion infinita */
-    /* animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
     
     /* Se para al final al estado inicial*/
     /* animation-fill-mode: none; */
     
-    /* Terimina al final en estado inicial */
-    animation-fill-mode: forwards;
+    /*Empieza y Terimina en estado inicial */
+    /* animation-fill-mode: forwards; */
+
+    /* empieza y termina de forma diferente */
+    /* animation-fill-mode: backwards; */
+    
+    /* aplica las dos propiedades a la vez */
+    /* empieza y termina como empieza */
+    /* animation-fill-mode: both; */
+
+    animation-direction: alternate;
 }
 
 @keyframes change-color {
@@ -44,7 +53,7 @@ body {
         background-color: yellowgreen;
         width: 300px;
     } */
-    50%,50% {
+    50%{
 
         background-color: green;
         width: 300px;
