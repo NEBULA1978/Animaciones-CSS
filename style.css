@@ -11,6 +11,11 @@ body {
     border-radius: 30px;
     transition: background-color 1s linear;
 }
-.box:hover{
+/* ejem1 */
+/* .box:hover{
+background: red;
+} */
+/* ejem2 */
+.box:active{
 background: red;
 }
