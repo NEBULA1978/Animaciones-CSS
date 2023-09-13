@@ -32,8 +32,27 @@ body {
     /* empieza y termina como empieza */
     /* animation-fill-mode: both; */
 
-    animation-direction: alternate;
+    /* alterna estilos */
+    /* animation-direction: alternate; */
+    /* invierte estilos de colores y temaños,etx */
+    animation-direction: reverse;
+
+    /* Pausa */
+    /* animation-play-state: paused; */
+    /* Anima */
+    animation-play-state: running;
 }
+
+
+/* Cuando ponemos el ratron encima se pausa */
+/* .box:hover {
+    animation-play-state: paused; */
+/* }  */
+
+/* con javascript podemos activar o deactivar paused cuando pase una accion en la pagina*/
+.box:paused {
+    animation-play-state: paused;
+} 
 
 @keyframes change-color {
     /* from {
