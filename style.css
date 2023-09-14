@@ -10,10 +10,14 @@
     border: 5px solid black;
     color: white;
     height: 150px;
-    /* Aumenta la altura para que el contenido sea visible */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    /* Ajusta el tamaño de fuente a un valor legible */
+}
+
+.movie-google {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
 }
